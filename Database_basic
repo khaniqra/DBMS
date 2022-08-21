@@ -1,0 +1,24 @@
+int : no
+char : letters
+varchar : alphanumeric
+
+show databases; //show already created databases
+
+create database name_of_database; //creates new databses 
+//let name_of_databse be abc
+
+use abc; //changes the current database to the given database
+
+show tables; //show tables on the database
+//Empty set if no table is present
+
+create table table_name(col_name1 datatype(size), col_name2 datatype(size),....);
+eg: create table info(id int(3), name char(10), address varchar(15));
+
+insert into info values(101,'abc', 'street no 2, abc building') //insert values in the table
+
+select * from info; // * selects all from the table
+
+select * from info where id='101'; //selects rows of given col
+
+select * from info order by id desc/asc; //arranges the col by desending/asending order
